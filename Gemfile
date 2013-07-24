@@ -21,13 +21,17 @@ group :assets do
 end
 
 gem 'jquery-rails'
-
+gem 'figaro'
 gem 'haml'
 gem 'haml-rails'
 gem 'therubyracer', :platforms => :ruby
 gem 'twitter-bootstrap-rails'
 gem 'less-rails'
-
+gem 'rmagick'
+gem 'fog'
+gem 'hirb'
+gem 'prawn'
+gem 'prawn_rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

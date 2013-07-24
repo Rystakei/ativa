@@ -3,7 +3,8 @@ class Post < ActiveRecord::Base
   belongs_to :project
   belongs_to :phase
   mount_uploader :attachment, ImageUploader
-
+  #This will override the .attachment method to get the regular attachment column.
+  
   default_scope order('created_at DESC')
 
   def snippet

@@ -16,6 +16,7 @@ class PostsController < ApplicationController
         format.html { redirect_to project_partial_path(@post.project.id, @post.phase.name, 'posts'), notice: 'Post was successfully created.' }
       else
         format.html { render action: "new" }
+        format.pdf { render action: "new" } # Might not work
       end
     end
   end

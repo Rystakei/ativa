@@ -12,4 +12,6 @@
 	.span1
 	.span11
 		%p= @post.message
-		= image_tag @post.attachment_url, height: "1000", width:"100%"
+		= image_tag @post.attachment_url(:medium)
+
+
